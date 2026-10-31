@@ -1,1 +1,217 @@
-..
+.audit-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 28px;
+    padding: 30px;
+    background: linear-gradient(120deg, #211a35, #171522);
+    border: 1px solid #3b2d57;
+    border-radius: 18px;
+}
+
+.audit-intro h2 {
+    margin: 14px 0 10px;
+    color: #f4f3fb;
+    font-size: 27px;
+}
+
+.audit-intro p {
+    margin: 0;
+    color: #b6b2cc;
+    line-height: 1.7;
+}
+
+.audit-symbol {
+    display: grid;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    place-items: center;
+    color: #c4b5fd;
+    background: rgba(167, 139, 250, 0.12);
+    border: 1px solid #4b3b6e;
+    border-radius: 22px;
+    font-size: 36px;
+}
+
+.audit-filter-card,
+.audit-table-card {
+    padding: 24px;
+    margin-bottom: 26px;
+    background: #161621;
+    border: 1px solid #29293a;
+    border-radius: 16px;
+}
+
+.audit-filter-card .card-heading,
+.audit-table-card .card-heading {
+    margin-bottom: 22px;
+}
+
+.audit-filter-form {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(130px, 1fr));
+    align-items: end;
+    gap: 16px;
+}
+
+.audit-filter-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #9695ad;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.audit-filter-form input,
+.audit-filter-form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    color: #f4f3fb;
+    background: #0d0d14;
+    border: 1px solid #29293a;
+    border-radius: 8px;
+    font: inherit;
+    font-size: 13px;
+    color-scheme: dark;
+}
+
+.audit-filter-form input:focus,
+.audit-filter-form select:focus {
+    outline: none;
+    border-color: #8b5cf6;
+}
+
+.audit-button,
+.audit-reset-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.audit-button {
+    color: #ffffff;
+    background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+    border: none;
+}
+
+.audit-reset-button {
+    color: #c4b5fd;
+    background: #211a35;
+    border: 1px solid #3b2d57;
+}
+
+.audit-button:hover,
+.audit-reset-button:hover {
+    opacity: 0.88;
+}
+
+.audit-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.audit-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.audit-table th {
+    padding: 15px 14px;
+    color: #9695ad;
+    background: #11111b;
+    border-bottom: 1px solid #29293a;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    white-space: nowrap;
+}
+
+.audit-table td {
+    padding: 16px 14px;
+    color: #e8e6f4;
+    border-bottom: 1px solid #29293a;
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.audit-table tbody tr:hover {
+    background: #1c1c2a;
+}
+
+.audit-user-id {
+    display: block;
+    margin-top: 5px;
+    color: #9695ad;
+    font-size: 11px;
+}
+
+.audit-action {
+    display: inline-block;
+    padding: 6px 9px;
+    color: #c4b5fd;
+    background: rgba(167, 139, 250, 0.12);
+    border: 1px solid rgba(167, 139, 250, 0.22);
+    border-radius: 7px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.audit-description {
+    min-width: 190px;
+    max-width: 360px;
+    overflow-wrap: anywhere;
+}
+
+.audit-empty {
+    padding: 35px !important;
+    color: #9695ad !important;
+    text-align: center;
+    line-height: 1.7;
+}
+
+@media (max-width: 1000px) {
+    .audit-filter-form {
+        grid-template-columns: repeat(2, minmax(130px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .audit-intro {
+        padding: 22px;
+    }
+
+    .audit-intro h2 {
+        font-size: 22px;
+    }
+
+    .audit-symbol {
+        width: 55px;
+        height: 55px;
+        font-size: 26px;
+    }
+
+    .audit-filter-form {
+        grid-template-columns: 1fr;
+    }
+
+    .audit-filter-card,
+    .audit-table-card {
+        padding: 16px;
+    }
+}
