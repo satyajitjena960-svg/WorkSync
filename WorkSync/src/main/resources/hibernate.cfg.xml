@@ -34,6 +34,7 @@
         <property name="hibernate.current_session_context_class">thread</property>
         <mapping class="com.worksync.model.PasswordReset"/>
 
+
     </session-factory>
 
 </hibernate-configuration>
